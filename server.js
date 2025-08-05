@@ -6,6 +6,7 @@ const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 3000;
 
+
 // OpenAI 初期化
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

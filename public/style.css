@@ -19,6 +19,26 @@ body {
   color: #333;
 }
 
+.main-wrapper {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.notice {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 12px;
+  margin: 10px auto; /* ← autoで中央寄せにしておく */
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  width: 90%;         /* ← wrapperの幅にぴったり揃える */
+  box-sizing: border-box; /* ← padding含めて幅制限の中に収める */
+}
+
+
 .subtitle {
   font-size: 14px;
   color: #777;
@@ -27,7 +47,7 @@ body {
 
 .chat-container {
   background-color: #fff;
-  width: 90%;
+  width: 90%; /* ← wrapperに合わせて全幅 */
   max-width: 400px;
   height: 500px;
   display: flex;
@@ -35,7 +55,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: hidden;
+
+  margin: 0 auto; /* ← これで左右中央に */
+  box-sizing: border-box;
 }
+
 
 .chat-box {
   flex: 1;
@@ -90,4 +114,13 @@ body {
 .message.bot {
   align-self: flex-start;
   background-color: #E5E5EA;
+}
+
+@media (max-width: 480px) {
+  .main-wrapper,
+  .chat-container,
+  .notice {
+    width: 92%;
+    max-width: none; /* 固定幅を解除して柔軟にする */
+  }
 }

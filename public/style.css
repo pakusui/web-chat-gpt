@@ -33,7 +33,7 @@ body {
   margin: 10px auto; /* ← autoで中央寄せにしておく */
   border-radius: 8px;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   width: 90%;         /* ← wrapperの幅にぴったり揃える */
   box-sizing: border-box; /* ← padding含めて幅制限の中に収める */
 }

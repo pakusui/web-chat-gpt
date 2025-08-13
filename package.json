@@ -15,5 +15,6 @@
     "express": "^4.19.2",
     "googleapis": "^136.0.0",
     "openai": "^4.52.0"
+    "cookie-parser": "^1.4.6"
   }
 }
